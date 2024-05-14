@@ -6,6 +6,13 @@
     <title>The Yonkers</title>
 	<link rel="stylesheet" href="normalize.css">
     <link rel="icon" href="favicon.ico" type="favicon">
+	
+	    <!-- Open Graph meta tags -->
+    <meta property="og:title" content="The Yonkers">
+    <meta property="og:description" content="Best band in the world">
+    <meta property="og:image" content="/images/lettermark.jpg">
+    <meta property="og:url" content="https://www.theyonkers.eu/">
+	
     <style>
         body {
             margin: 0;
@@ -15,7 +22,8 @@
             flex-direction: column; /* Arrange items vertically */
             justify-content: center;
             align-items: center;
-            height: 100vh; /* Full height of viewport */
+            height: 100vh;
+			overflow-y: hidden;
         }
 
         .logo {
@@ -25,7 +33,7 @@
             font-size: calc(11vw);
             background-color: #DDDDDD;
             color: transparent;
-            text-shadow: 0px 1px 3px rgba(255, 255, 255, 0.95);
+            text-shadow: 0px 1px 3px rgba(255, 255, 255, 0.9);
             -webkit-background-clip: text;
             -moz-background-clip: text;
             background-clip: text;
@@ -43,12 +51,22 @@
             background-color: #DDDDDD;
             text-decoration: none;
             color: transparent;
-            text-shadow: 0px 3px 3px rgba(255, 255, 255, 0.95);
+            text-shadow: 0px 3px 3px rgba(255, 255, 255, 0.9);
             -webkit-background-clip: text;
             -moz-background-clip: text;
             background-clip: text;
             margin-right: 20px; /* Spacing between links */
+			transition: background-color 0.15s ease-in-out, text-shadow 0.15s ease-in-out;
         }
+		
+		.menu a:hover {
+			background-color: #808080;
+            color: transparent;
+            text-shadow: 0px 1px 3px rgba(255, 255, 255, 0.9);
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            background-clip: text;
+}
 
         /* Media query for mobile breakpoints */
         @media (max-width: 768px) {
@@ -70,7 +88,7 @@
         <a href="#">SPOTIFY</a>
         <a href="#">YOUTUBE</a>
         <a href="https://www.instagram.com/theyonkers.band/">INSTAGRAM</a>
-        <a href="mailto:joppekusters@hotmail.com?subject=Booking%20The%20Yonkers">BOOKINGS</a>
+        <a href="mailto:m@maxaugustijn.com?subject=Booking%20The%20Yonkers">BOOKINGS</a>
     </div>
 </body>
 </html>
