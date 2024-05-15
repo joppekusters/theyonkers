@@ -18,12 +18,21 @@
             margin: 0;
             padding: 0;
             background-color: #FFFFFF; /* White background */
-            display: flex;
-            flex-direction: column; /* Arrange items vertically */
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            overflow-y: hidden; /* Prevent vertical overflow */
+            min-height: 100%;
+			overflow-y: hidden; /* Prevent vertical overflow */
+        }
+
+        .container {
+            position: absolute;
+        }
+
+        .container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+			text-align: center;
+			width: 90vw;
         }
 
         .logo {
@@ -41,7 +50,11 @@
 
         .menu {
             position: absolute;
+			left: 50%;
+            transform: translate(-50%, -50%);
             bottom: 50px; /* 50px from the bottom */
+			text-align: center;
+			width: 90vw;
         }
 
         .menu a {
@@ -82,7 +95,9 @@
     </style>
 </head>
 <body>
-    <h1 class="logo">THE YONKERS</h1>
+    <div class="container">
+        <h1 class="logo">THE YONKERS</h1>
+    </div>
     <div class="menu">
         <a href="#">SPOTIFY</a>
         <a href="#">YOUTUBE</a>
